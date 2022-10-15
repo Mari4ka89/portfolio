@@ -1,17 +1,21 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   margin: 100px 0;
+  font-family: var(--default-font-family);
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
+  font-family: var(--heading-font-family);
 }
 
 h1 {
@@ -32,30 +36,21 @@ p {
   line-height: 1.5;
 }
 
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
 .about-paragraph {
   margin: 30px 0;
 }
 
-.navigation-links {
-  display: flex;
-  margin: 15px 0;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-}
-
-.primary-link,
-.secondary-link {
+.primary-link {
   border-radius: 4px;
   text-decoration: none;
   text-transform: capitalize;
   padding: 20px 15px;
-}
-
-.primary-link {
-  background: var(--primary-color);
+  background: var(--branding-color);
   box-shadow: var(--box-shadow);
 }
 
@@ -64,13 +59,8 @@ p {
   color: var(--secondary-color);
 }
 
-.secondary-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
 .homepage-link {
-  color: var(--primary-color);
+  color: var(--branding-colorr);
   text-align: center;
   display: block;
 }
@@ -87,7 +77,7 @@ p {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--branding-color);
   font-size: 28px;
   text-decoration: none;
 }
