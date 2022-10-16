@@ -32,17 +32,14 @@ h3 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero {
   text-align: center;
   padding: 100px 20px;
-}
-
-.about-paragraph {
-  margin: 30px 0;
 }
 
 .primary-link {
@@ -57,21 +54,6 @@ p {
 .primary-link,
 .primary-link:hover {
   color: var(--secondary-color);
-}
-
-.homepage-link {
-  color: var(--branding-colorr);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
 }
 
 .email-link {
