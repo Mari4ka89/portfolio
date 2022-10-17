@@ -72,12 +72,6 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-  .content-container {
-    margin: 0;
-  }
-}
-
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
