@@ -41,6 +41,10 @@ p {
   line-height: 30px;
 }
 
+a {
+  color: var(--bs-body-color);
+}
+
 .hero {
   text-align: center;
   padding: var(--content-container-padding);
@@ -60,20 +64,38 @@ p {
   color: var(--secondary-color);
 }
 
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--branding-color);
-  font-size: 28px;
-  text-decoration: none;
+.content-container {
+  padding: var(--content-container-padding);
 }
 
-.email-link:hover {
-  text-decoration: underline;
+.content {
+  margin: 12px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.contact-icon {
+  color: var(--branding-color);
+}
+
+@media (max-width: 900px) {
+  .content-container {
+    text-align: center;
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 576px) {
-  h1 {
+  h1,
+  .content h1 {
     font-size: 48px;
     line-height: 1.5;
   }
